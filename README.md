@@ -3,11 +3,12 @@
 A flutter application to cover some flutter widgets UI connected with firebase.
 
 ## Getting Started and Submitting The Assignment
-- Fork the repo
-- Clone the repo
-- Finish the assignment based on the steps below
-- Commit and push your changes
-- Create a pull request, so we can go over what you implemented
+- Fork the repo.
+- Clone the repo.
+- Create new branch using your name_assignment.
+- Finish the assignment based on the steps below.
+- Add, then commit and push your changes.
+- Create a pull request, so we can go over what you implemented.
 
 ## Assignment Details
 A class named chat_details.dart, there is a Center widget in it, that says 'Assignment goes here'.
