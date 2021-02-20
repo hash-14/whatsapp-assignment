@@ -28,6 +28,7 @@ for the logic on how to CRUD from Firestore.
 
 Bonus:
 - Good UI.
+- Good coding structure.
 - Ability to send Image with Firestore CRUD operations.
 - Use state management like states_rebuilder in flutter or Porvider
 - Make it work with android and ios devices
