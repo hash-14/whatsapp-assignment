@@ -4,6 +4,7 @@ A flutter application to cover some flutter widgets UI connected with firebase.
 
 ## Getting Started and Submitting The Assignment
 - Fork the repo
+- Clone the repo
 - Finish the assignment based on the steps below
 - Commit and push your changes
 - Create a pull request, so we can go over what you implemented
