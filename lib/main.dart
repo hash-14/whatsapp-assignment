@@ -1,12 +1,15 @@
 import 'dart:async';
 
 import 'package:camera/new/camera.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:mywhatsapp/whatsapp_home.dart';
 
 List<CameraDescription> cameras;
 
 Future<Null> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(new MyApp());
 }
 

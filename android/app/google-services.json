@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "833812859002",
+    "project_id": "whats-app-assigment",
+    "storage_bucket": "whats-app-assigment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833812859002:android:d123a68be47b26ddbb53c3",
+        "android_client_info": {
+          "package_name": "hashbro.com.mywhatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833812859002-lrjr8va9qjced2nf3ccnqq5qn6k2e333.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hashbro.com.mywhatsapp",
+            "certificate_hash": "e8d10201bda16121063aa210f8e8d41157fa243d"
+          }
+        },
+        {
+          "client_id": "833812859002-560pbmm768c469cpib8oos8fu4ghdl94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbn_35frHXvCenHQVUW1gcU08bm4ftQeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833812859002-560pbmm768c469cpib8oos8fu4ghdl94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
