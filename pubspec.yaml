@@ -26,6 +26,9 @@ dependencies:
   #provider#
   provider: ^4.3.2+1
 
+
+  image_picker: ^0.6.7+22
+
   #hive#
   hive: ^1.4.4
 

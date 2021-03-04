@@ -1,5 +1,3 @@
-import 'package:mywhatsapp/pages/chat_details.dart';
-
 class ChatDetailInjectState {
   /*ChatDetailModel chatDetailModel;*/
 
