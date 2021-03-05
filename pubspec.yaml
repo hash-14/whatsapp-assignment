@@ -32,9 +32,6 @@ dependencies:
   #path_provider#
   path_provider: ^1.6.14
 
-  #camera#
-  camera: ^0.5.7+4
-
   #fluro#
   fluro: ^1.6.1
 
