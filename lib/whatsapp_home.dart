@@ -1,12 +1,11 @@
-import 'package:camera/new/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:mywhatsapp/pages/call.dart';
 import 'package:mywhatsapp/pages/chat.dart';
 import 'package:mywhatsapp/pages/status.dart';
 
 class WhatsAppHome extends StatefulWidget {
-  final List<CameraDescription> cameras;
-  WhatsAppHome({this.cameras});
+
+  WhatsAppHome();
 
   @override
   _WhatsAppHomeState createState() => _WhatsAppHomeState();
