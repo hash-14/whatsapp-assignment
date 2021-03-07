@@ -1,26 +1,28 @@
-import 'dart:async';
-
-import 'package:camera/new/camera.dart';
+import 'package:mywhatsapp/api/firebase_api.dart';
+import 'package:mywhatsapp/pages/chats_page.dart';
+import 'package:mywhatsapp/users.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:mywhatsapp/whatsapp_home.dart';
-
-List<CameraDescription> cameras;
 
 Future<Null> main() async {
-  runApp(new MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  await FirebaseApi.addRandomUsers(Users.initUsers);
+
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  static final String title = 'Firebase Chat';
+
   @override
-  Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: "WhatsApp",
-      theme: new ThemeData(
-        primaryColor: new Color(0xff075E54),
-        accentColor: new Color(0xff25D366),
-      ),
-      debugShowCheckedModeBanner: false,
-      home: new WhatsAppHome(cameras: cameras),
-    );
-  }
+  Widget build(BuildContext context) => MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: title,
+        theme: new ThemeData(
+          primaryColor: new Color(0xff075E54),
+          accentColor: new Color(0xff25D366),
+        ),
+        home: WhatsAppHome(),
+      );
 }
