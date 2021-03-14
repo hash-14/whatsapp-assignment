@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:camera/new/camera.dart';
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:mywhatsapp/whatsapp_home.dart';
 
