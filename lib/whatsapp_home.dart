@@ -1,11 +1,14 @@
-import 'package:camera/new/camera.dart';
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:mywhatsapp/pages/call.dart';
 import 'package:mywhatsapp/pages/chat.dart';
 import 'package:mywhatsapp/pages/status.dart';
+import 'package:mywhatsapp/services/Firestore.dart';
 
 class WhatsAppHome extends StatefulWidget {
   final List<CameraDescription> cameras;
+
   WhatsAppHome({this.cameras});
 
   @override
@@ -34,6 +37,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
 
   @override
   Widget build(BuildContext context) {
+    FirestoreService db=FirestoreService();
     return Scaffold(
       appBar: AppBar(
         title: Text("WhatsApp"),
@@ -74,7 +78,10 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
                 Icons.message,
                 color: Colors.white,
               ),
-              onPressed: () => print("open chats"),
+              onPressed: () async{
+
+                    await db.createDummyData(db.dummyData);
+              },
             )
           : null,
     );
